@@ -1,8 +1,14 @@
 # -*- mode: python ; coding: utf-8 -*-
+# 可移植的打包配置：路径都相对于本 spec 文件所在目录，
+# 在任何机器上执行 python -m PyInstaller DiskReport.spec 都能直接打包。
+
+from pathlib import Path
+
+BASE = Path(SPECPATH)  # SPECPATH 由 PyInstaller 注入
 
 
 a = Analysis(
-    ['C:/Users/Lenovo/Documents/New project/DiskReport/DiskReport.py'],
+    [str(BASE / 'DiskReport.py')],
     pathex=[],
     binaries=[],
     datas=[],
@@ -35,6 +41,6 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    version='C:/Users/Lenovo/Documents/New project/DiskReport/version_info.txt',
-    icon=['C:/Users/Lenovo/Documents/New project/DiskReport/app.ico'],
+    version=str(BASE / 'version_info.txt'),
+    icon=[str(BASE / 'app.ico')],
 )

@@ -25,7 +25,8 @@ Windows 自带的"存储设置"只能告诉你几个大类占了多少，资源�
 
 ### 方式一：直接运行现成的 exe
 
-前往本仓库的 **Releases** 页面下载 `DiskReport.exe`，双击即可运行（无需安装 Python）。
+**[:arrow_down: 下载 DiskReport.exe](https://github.com/DylanWalker933/DiskReport/releases/latest/download/DiskReport.exe)**（约 11 MB，对应 v1.0），
+下载后双击即可运行，**无需安装 Python**。历史版本与校验值见 [Releases](https://github.com/DylanWalker933/DiskReport/releases) 页面。
 
 > 程序没有购买代码签名证书，首次运行时 Windows SmartScreen 可能提示"已保护你的电脑"，
 > 点 **更多信息 → 仍要运行** 即可。源码完全公开在本仓库，可自行审阅或自行打包。
