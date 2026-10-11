@@ -1,0 +1,28 @@
+# UTF-8
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable(
+        '080404b0',
+        [StringStruct('CompanyName', '个人工具'),
+         StringStruct('FileDescription', '磁盘空间扫描分析工具 - 按文件夹统计占用容量并列出大文件'),
+         StringStruct('FileVersion', '1.0.0.0'),
+         StringStruct('InternalName', 'DiskReport'),
+         StringStruct('LegalCopyright', ''),
+         StringStruct('OriginalFilename', 'DiskReport.exe'),
+         StringStruct('ProductName', '磁盘空间扫描分析工具'),
+         StringStruct('ProductVersion', '1.0.0.0')])
+    ]),
+    VarFileInfo([VarStruct('Translation', [2052, 1200])])
+  ]
+)

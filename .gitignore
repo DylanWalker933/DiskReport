@@ -1,0 +1,22 @@
+# 构建产物
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.spec.bak
+
+# 打包出来的可执行文件（建议改用 GitHub Releases 分发）
+*.exe
+
+# 扫描结果：包含本机真实路径、主机名等信息，默认不提交
+sample_output/
+scan.log
+*报告*.html
+*报告*.csv
+*报告*.txt
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
