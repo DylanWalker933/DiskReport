@@ -129,6 +129,12 @@ DiskReport.exe --cli --root D:\ --out D:\报告\D盘空间报告 --format all --
 **能扫描 C 盘吗？**
 可以，把扫描目录改成 `C:\` 即可，但强烈建议以管理员身份运行，否则会有大量目录读不到。
 
+**从 Release 下载 exe 很慢、或者直接失败？**
+GitHub 的 Release 资产实际托管在 `release-assets.githubusercontent.com`，国内网络常常被限速或阻断，
+典型表现是"仓库页面打得开、下载却卡住不动或报 TLS/EOF 错误"。可以换一个代理节点，
+或在下载链接前加 GitHub 加速镜像前缀（例如 `https://ghfast.top/` + 原始链接）后再下载。
+**下载完成后请用 [Release 说明](https://github.com/DylanWalker933/DiskReport/releases) 里的 SHA256 校验文件完整性。**
+
 ## 项目结构
 
 ```
